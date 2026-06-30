@@ -1,0 +1,12 @@
+.footer{background:var(--bg-secondary);border-top:1px solid var(--border-subtle);padding:4rem 0 2rem;margin-top:auto}
+.grid{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:2.5rem;margin-bottom:3rem}
+.brand .logo{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.15rem;color:var(--text-primary);opacity:1!important}
+.logoMark{width:30px;height:30px;background:var(--text-primary);color:var(--bg);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700}
+.brand p{font-size:.875rem;color:var(--text-muted);margin-top:1rem;max-width:26ch;line-height:1.7}
+.colTitle{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:1.25rem}
+.links{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.links a{font-size:.875rem;color:var(--text-muted)}
+.links a:hover{color:var(--text-secondary);opacity:1}
+.bottom{border-top:1px solid var(--border-subtle);padding-top:1.5rem;font-size:.8rem;color:var(--text-muted);text-align:center}
+@media(max-width:1024px){.grid{grid-template-columns:1fr 1fr;gap:2rem}}
+@media(max-width:768px){.grid{grid-template-columns:1fr}}

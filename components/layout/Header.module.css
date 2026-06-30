@@ -1,0 +1,18 @@
+.header{position:sticky;top:0;z-index:100;height:var(--header-h);background:rgba(44,45,45,.92);border-bottom:1px solid var(--border-subtle);backdrop-filter:blur(16px) saturate(180%)}
+[data-theme="light"] .header{background:rgba(255,255,255,.92)}
+.inner{display:flex;align-items:center;justify-content:space-between;height:100%;gap:2rem}
+.logo{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.2rem;color:var(--text-primary);opacity:1!important}
+.logoMark{width:32px;height:32px;background:var(--text-primary);color:var(--bg);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700}
+.nav{display:flex;align-items:center;gap:.25rem}
+.navLink{padding:.45rem .75rem;border-radius:var(--radius-sm);font-size:.875rem;font-weight:500;color:var(--text-secondary);opacity:1!important}
+.navLink:hover,.active{color:var(--text-primary)!important;background:var(--accent-light)}
+.actions{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+.iconBtn{background:none;border:1px solid var(--border);color:var(--text-secondary);cursor:pointer;border-radius:var(--radius-sm);padding:6px;display:flex;align-items:center;justify-content:center;width:36px;height:36px}
+.iconBtn:hover{color:var(--text-primary);background:var(--accent-light)}
+.menuBtn{display:none}
+.mobileMenu{position:fixed;top:var(--header-h);left:0;right:0;bottom:0;background:var(--bg);z-index:90;padding:1.5rem;transform:translateY(-8px);opacity:0;pointer-events:none;transition:transform .25s,opacity .25s;display:flex;flex-direction:column;gap:.5rem}
+.mobileOpen{transform:translateY(0);opacity:1;pointer-events:all}
+.mobileLink{display:block;padding:1rem 0;border-bottom:1px solid var(--border-subtle);font-size:1.05rem;font-weight:500;color:var(--text-secondary);opacity:1!important}
+.searchOverlay{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.75);display:flex;align-items:flex-start;justify-content:center;padding-top:14vh}
+.searchBox{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;width:min(640px,90vw);box-shadow:var(--shadow-lg)}
+@media(max-width:768px){.nav{display:none}.menuBtn{display:flex}}
